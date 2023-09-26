@@ -1,4 +1,3 @@
-import Header from "@/components/Header/Header";
 import { Button } from "@/components/ui/button";
 import {
   Tooltip,
@@ -9,18 +8,19 @@ import {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <Header />
-      <TooltipProvider>
-        <Tooltip delayDuration={500}>
-          <TooltipTrigger asChild>
-            <Button variant="default">Click Here</Button>
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>Click!</p>
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
+    <main className="flex min-h-screen bg-[#DAE0E6] pt-12">
+      <div className="flex w-full flex-col items-start">
+        <TooltipProvider>
+          <Tooltip delayDuration={500}>
+            <TooltipTrigger asChild>
+              <Button variant="primary">Click Here</Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Click!</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      </div>
     </main>
   );
 }
