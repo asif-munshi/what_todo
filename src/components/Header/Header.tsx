@@ -26,7 +26,7 @@ export default function Header() {
               <Input
                 type="text"
                 placeholder="Search"
-                className="rounded-full focus-visible:border focus-visible:border-blue-500 focus-visible:bg-[#F6F7F8] focus-visible:ring-0 focus-visible:ring-offset-0"
+                className="rounded-full focus-visible:border focus-visible:border-[#0079D3] focus-visible:bg-[#F6F7F8] focus-visible:ring-0 focus-visible:ring-offset-0"
               />
             </div>
           </div>

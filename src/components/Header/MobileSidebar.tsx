@@ -26,7 +26,7 @@ export default function MobileSidebar() {
         </SheetTrigger>
         <SheetContent
           side={"left"}
-          className="flex h-screen flex-col justify-between"
+          className="flex h-screen flex-col justify-between pt-12"
         >
           <SheetHeader>
             <SheetTitle>What Todo</SheetTitle>

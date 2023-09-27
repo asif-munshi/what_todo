@@ -28,7 +28,7 @@ const navLinks = [
     path: "/",
     icon: (
       <Home
-        className="mr-2 h-4 w-4 fill-none"
+        className="mr-2 h-5 w-5 fill-none"
         width="24"
         height="24"
         viewBox="0 0 24 24"
@@ -43,7 +43,7 @@ const navLinks = [
     path: "create",
     icon: (
       <Plus
-        className="mr-2 h-4 w-4 fill-none"
+        className="mr-2 h-5 w-5 fill-none"
         width="24"
         height="24"
         viewBox="0 0 24 24"
@@ -62,7 +62,7 @@ export default function Navigation() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="box-border flex h-9 w-full min-w-[72px] max-w-[270px] flex-grow items-center justify-between rounded border border-transparent p-0 px-2 focus-within:border-[#EDEFF1] hover:cursor-pointer hover:border-[#EDEFF1] hover:bg-transparent"
+          className="box-border flex h-9 w-full min-w-[72px] max-w-[270px] flex-grow items-center justify-between rounded border border-transparent p-0 px-2 hover:border-[#EDEFF1] hover:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
         >
           <div className="flex h-full w-full flex-row items-center gap-2">
             {pathname.match(/^[/]$/) && (
@@ -94,7 +94,7 @@ export default function Navigation() {
             <DropdownMenuItem key={nav.id} className="p-0">
               <Link
                 href={nav.href}
-                className="flex h-full w-full flex-row items-center p-2"
+                className="flex h-full w-full flex-row items-center px-6 py-2"
                 onClick={() => setOpen(false)}
               >
                 {nav.icon}
