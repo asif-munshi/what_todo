@@ -1,5 +1,3 @@
-import { LogOut, Settings, User } from "lucide-react";
-
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,6 +13,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
+import { LogOut, Settings, User } from "lucide-react";
 import Link from "next/link";
 import UserAvater from "./UserAvater";
 
