@@ -1,25 +1,20 @@
-import { Button } from "@/components/ui/button";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import SubHeader from "@/components/SubHeader/SubHeader";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen bg-[#DAE0E6] pt-12">
-      <div className="flex w-full flex-col items-start">
-        <TooltipProvider>
-          <Tooltip delayDuration={500}>
-            <TooltipTrigger asChild>
-              <Button variant="primary">Click Here</Button>
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Click!</p>
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>
+    <main className="min-h-screen bg-[#DAE0E6] pt-12">
+      <div className="z-[3]">
+        <div className="box-border flex max-w-full flex-row justify-center px-6 py-5">
+          <div className="w-full lg:w-[640px]">
+            <SubHeader />
+          </div>
+        </div>
       </div>
     </main>
   );
