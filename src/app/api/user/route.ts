@@ -7,6 +7,13 @@ import { prisma } from "@/lib/prisma";
 export async function POST(request: Request) {
   const { username, email, password } = await request.json();
 
+  const userExist = await prisma.user.findFirst({
+    where: { email: email },
+  });
+  if (userExist) {
+    return NextResponse.json({ data: "Email Already Exists" }, { status: 400 });
+  }
+
   try {
     const createdUser = await prisma.user.create({
       data: { username, email, password },

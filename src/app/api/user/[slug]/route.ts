@@ -2,7 +2,10 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 
 // Get User by params
-export async function GET({ params }: { params: { slug: string } }) {
+export async function GET(
+  request: Request,
+  { params }: { params: { slug: string } }
+) {
   const email = params.slug;
 
   try {
@@ -40,7 +43,10 @@ export async function PUT(
 }
 
 // Delete User by params
-export async function DELETE({ params }: { params: { slug: string } }) {
+export async function DELETE(
+  request: Request,
+  { params }: { params: { slug: string } }
+) {
   const email = params.slug;
 
   try {
